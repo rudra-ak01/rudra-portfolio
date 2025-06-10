@@ -69,25 +69,29 @@
     </aside>
 
     <!-- Mobile toggle button -->
-   <button id="toggleSidebar" class="fixed top-4 left-4 z-40 p-2 bg-blue-600 text-white rounded-md md:hidden" aria-label="Toggle sidebar">
-        <svg id="iconHamburger" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-         </svg>
-        <svg id="iconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6" />
-        </svg>
-    </button>
+  <button id="toggleSidebar" 
+        class="fixed top-3 left-3 z-40 p-1.5 bg-blue-600 text-white rounded-md md:hidden w-9 h-9 flex items-center justify-center" 
+        aria-label="Toggle sidebar">
+  
+    <svg id="iconHamburger" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  
+    <svg id="iconClose" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6" />
+    </svg>
+  </button>
+
     <!-- Mobile toggle button end -->
 
     <!-- mode toggle button -->
     
-    <button id="theme-toggle" aria-label="Toggle Dark Mode" class="fixed top-4 right-4 z-50 text-2xl p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-yellow-500 dark:text-white shadow-md transition duration-300">
-      <span id="theme-icon">🌙</span>
-    </button>
-
+  <button id="theme-toggle"
+        aria-label="Toggle Dark Mode"
+        class="fixed top-3 right-3 z-50 text-xl p-1.5 rounded-full bg-gray-200 dark:bg-gray-700 text-yellow-500 dark:text-white shadow-md transition duration-300 w-9 h-9 flex items-center justify-center">
+    <span id="theme-icon">🌙</span>
+  </button>
     <!-- mode toggle button end -->
-
-       
 
     <!-- sidebar end -->
 
