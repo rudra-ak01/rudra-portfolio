@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rudra Prasad Acharya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {darkMode: 'class',};</script>
+  <link rel="shortcut icon" href="assets/images/letter-r.png" type="image/x-icon">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500 h-screen">
+
+  <div class="flex h-full">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 bg-white dark:bg-gray-900 border-r border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white flex flex-col transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
+      <div class="p-6 border-b border-gray-200">
+        <img src="./assets/images/pic.jpg" alt="Rudra Prasad Acharya" class="w-40 h-40 rounded-full mx-auto mb-4 object-cover shadow-lg border-4 border-white" />
+
+        <h1 class="mt-4 text-center text-2xl font-bold text-gray-900 tracking-wide font-sans dark:text-gray-100">Rudra Prasad Acharya</h1>
+        <p class="mt-1 text-center text-sm text-blue-600 font-semibold font-mono uppercase tracking-wider">Fullstack Developer</p>
+      </div>
+
+      <!-- Social Icons -->
+
+    <div class="flex justify-center flex-wrap gap-4 mt-6">
+    <!-- GitHub -->
+    <a href="https://github.com/rudra-ak01" target="_blank" class="text-gray-500 hover:text-black hover:scale-110 transition-transform dark:text-gray-300">
+    <i class="fab fa-github text-3xl"></i>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rpa0911/" target="_blank" class="text-gray-500 hover:text-blue-700 hover:scale-110 transition-transform">
+    <i class="fab fa-linkedin text-3xl"></i>
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/its_ur_boy_amankumar?igsh=dDAwNDc3eXdsdnlj" target="_blank" class="text-gray-500 hover:text-pink-600 hover:scale-110 transition-transform">
+    <i class="fab fa-instagram text-3xl"></i>
+    </a>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1BAsVmDK4W/" target="_blank" class="text-gray-500 hover:text-blue-600 hover:scale-110 transition-transform">
+    <i class="fab fa-facebook text-3xl"></i>
+    </a>
+    <!-- HackerRank -->
+    <a href="https://www.hackerrank.com/profile/amankumar4202j" target="_blank" class="text-green-600 hover:text-green-700 hover:scale-110 transition-transform">
+    <i class="fab fa-hackerrank text-3xl"></i>
+    </a>
+    <!-- LeetCode (Custom SVG because Font Awesome doesn't have it) -->
+    <a href="https://leetcode.com/u/rudra-01/" target="_blank" class="hover:scale-110 transition-transform">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+         alt="LeetCode" class="w-8 h-8 object-contain" />
+    </a>
+    </div>
+    <hr class="border-t border-gray-300 my-6 w-full" />
+    
+
+
+      <!-- Navigation Links -->
+      <nav class="flex flex-col space-y-4">
+    <a href="#home" class="text-gray-700  dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">🏠 Home</a>
+    <a href="#about" class="text-gray-700  dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">🙋 About</a>
+    <a href="#education" class="text-gray-700  dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">🎓 Education</a>
+    <a href="#projects" class="text-gray-700  dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">💼 Projects</a>
+    <a href="#contact" class="text-gray-700  dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">✉️ Contact</a>
+  </nav>
+    </aside>
+
+    <!-- Mobile toggle button -->
+   <button id="toggleSidebar" class="fixed top-4 left-4 z-40 p-2 bg-blue-600 text-white rounded-md md:hidden" aria-label="Toggle sidebar">
+        <svg id="iconHamburger" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+         </svg>
+        <svg id="iconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M6 18L18 6" />
+        </svg>
+    </button>
+    <!-- Mobile toggle button end -->
+
+    <!-- mode toggle button -->
+    
+    <button id="theme-toggle" aria-label="Toggle Dark Mode" class="fixed top-4 right-4 z-50 text-2xl p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-yellow-500 dark:text-white shadow-md transition duration-300">
+      <span id="theme-icon">🌙</span>
+    </button>
+
+    <!-- mode toggle button end -->
+
+       
+
+    <!-- sidebar end -->
+
+    <!-- Main content -->
+    <main class="flex-1 p-8 overflow-auto ml-0 md:ml-64">
+        <!-- hero section -->
+  <section id="home" class="relative min-h-screen bg-cover bg-center" style="background-image: url('assets/images/hero-bg.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  
+          <!-- Content -->
+      <div class="relative z-10 flex items-center min-h-screen px-8 md:px-20">
+          <!-- Text block -->
+          <div class="max-w-xl text-white">
+        <h1 class="text-4xl md:text-4xl font-bold mb-4 drop-shadow-lg" style="font-family: 'Playfair Display', serif;">
+           Rudra Prasad Acharya
+          </h1>
+        <p class="text-lg md:text-2xl mb-8 drop-shadow-md" style="font-family: 'Dancing Script', cursive;">
+         Passionate Fullstack developer and photographer who loves crafting web apps and capturing moments.
+        </p>
+          <!-- buttons for resume -->
+      <div class="space-x-4">
+        <a href="assets/resume/Rudra-Prasad-Acharya--Resume.pdf" target="_blank" class="border border-blue-600 hover:bg-blue-600 hover:text-white transition px-6 py-3 rounded-lg font-semibold shadow-lg">
+         Download Resume
+        </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <!-- hero section end -->
+
+        <!-- About Section -->
+    <section id="about" class="bg-gray-100 dark:bg-gray-800 py-16 px-6 md:px-24 fade-in text-gray-900 dark:text-gray-100">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          <!-- Text -->
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-4 text-blue-800 underline">About Me</h2>
+          <p class="text-lg text-gray-700 leading-relaxed dark:text-gray-300">
+            I’m Rudra Prasad Acharya, an MCA student with a BCA background, passionate about full-stack development and photography. Proficient in Java, C, web technologies (HTML/CSS/JS), and database management, I thrive on solving problems and collaborating in a team. Currently seeking real-world opportunities to apply my skills and contribute meaningfully to innovative projects.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+        <!-- personal details section -->
+  <section class="py-16 px-6 md:px-24 bg-white fade-in dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+     <!-- Profile Image -->
+      <div class="relative w-70 h-80 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+      <img src="assets/images/profile pic.jpg" alt="Profile" class="w-full h-full object-cover rounded-2xl" />
+      <div class="absolute inset-0 ring-4 ring-blue-500/50 rounded-2xl pointer-events-none"></div>
+    </div>
+
+      <!-- Personal Info -->
+      <div class="text-gray-800 flex-1">
+        <h3 class="text-2xl font-bold mb-4 text-blue-800 underline">Personal Details</h3>
+        <ul class="text-lg space-y-3 dark:text-gray-300">
+          <li><strong>Name:</strong> Rudra Prasad Acharya</li>
+          <li><strong>Date of Birth:</strong> 11<sup>th</sup> September 2002</li>
+          <li><strong>Email:</strong> rudraprasadacharya5@gmail.com</li>
+          <li><strong>Phone:</strong> +91-8260413301</li>
+          <li><strong>Qualification:</strong> MCA</li>
+          <li><strong>Language:</strong> English, Hindi, Odia, Telugu</li>
+          <li><strong>City:</strong> Ganjam, Odisha</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <!-- personal details section end -->
+
+    <!-- skills section with progress bars -->
+
+    <section class="bg-gray-100 py-16 px-6 md:px-24 fade-in dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-10 underline">Skills</h2>
+
+    <div class="space-y-6 text-gray-700 dark:text-gray-100">
+      
+      <!-- Skill Item -->
+      <div>
+        <label class="block text-gray-700 mb-1 dark:text-gray-100 ">Java</label>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-blue-600 h-4 rounded-full" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 mb-1 dark:text-gray-100">HTML/CSS</label>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-blue-400 h-4 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 mb-1 dark:text-gray-100">JavaScript</label>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-yellow-500 h-4 rounded-full" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 mb-1 dark:text-gray-100">MySQL</label>
+        <div class="w-full bg-gray-300 rounded-full h-4">
+          <div class="bg-green-500 h-4 rounded-full" style="width: 90%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- skills section end -->
+
+    <!-- Education and certifications section -->
+     <section class="bg-white py-16 px-6 md:px-24 dark:bg-gray-900" id="education">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-800 mb-10 underline">Education</h2>
+
+    <!-- Timeline Container -->
+    <div class="border-l-4 border-blue-500 pl-6 space-y-8 relative">
+      <!-- Item 1 -->
+      <div>
+        <h3 class="text-xl font-semibold">Master of Computer Applications (MCA)</h3>
+        <p class="text-sm text-gray-600">Biju Pattnaik University of Technology | 2023 - Present</p>
+        <p class="text-gray-700 mt-1">Specialized in Full-Stack Development and Software Engineering.</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div>
+        <h3 class="text-xl font-semibold">Bachelor of Computer Applications (BCA)</h3>
+        <p class="text-sm text-gray-600">Berhampur University | 2020 - 2023</p>
+        <p class="text-gray-700 mt-1">Focused on Java, C, Web Development, and DBMS.</p>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <h2 class="text-3xl font-bold text-blue-800 mt-16 mb-10 underline">Certifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="https://coursera.org/share/22e51a32051fd365333825d244745299" target="_blank" class="fade-in block p-4 border rounded-lg shadow-sm hover:shadow-md transition duration-300 bg-white dark:bg-gray-800">
+        <h4 class="font-semibold text-lg">Introduction to Software Engineering - Coursera</h4>
+        <p class="text-sm text-gray-600">Issued: Jan 2024</p>
+      </a>
+      <!-- <a href="https://bootcamp.example.com/certificates/fullstack" target="_blank" class="cert-card block p-4 border rounded-lg shadow-sm hover:shadow-md transition duration-300 bg-white">
+        <h4 class="font-semibold text-lg">Fullstack Development - XYZ Bootcamp</h4>
+        <p class="text-sm text-gray-600">Issued: Nov 2023</p>
+      </a> -->
+      <!-- <a href="https://www.hackerrank.com/certificates/sample-sql" target="_blank" class="cert-card block p-4 border rounded-lg shadow-sm hover:shadow-md transition duration-300 bg-white">
+        <h4 class="font-semibold text-lg">SQL (Basic) - HackerRank</h4>
+        <p class="text-sm text-gray-600">Issued: Dec 2023</p>
+      </a> -->
+
+        <!-- more certifications can be added here -->
+
+    </div>
+  </div>
+</section>
+  <!-- Education and certifications section end -->
+
+        <!-- projects section -->
+    <section class="bg-gray-100 py-12 px-4 dark:bg-gray-800" id="projects">
+  <h2 class="text-3xl font-bold text-center text-blue-800 mb-10 underline">Projects</h2>
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+    <!-- Project 1 -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+  <img src="assets/images/bank.jpg" alt="Banking System Project" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold text-gray-800 mb-2">Banking System in Java</h3>
+    <p class="text-sm text-gray-600 mb-3">Java-based Swing application with MPIN-secured login, A2A transactions, and detailed account history using MySQL DB.</p>
+    <div class="text-xs text-gray-500 mb-4">Tech: Java, Swing, MySQL</div>
+    <a href="assets/project_details/project1.html" class="inline-block text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm transition">View Details</a>
+  </div>
+</div>
+
+    <!-- Project 2 -->
+    <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+      <img src="assets/images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">AES Encryption Tool</h3>
+        <p class="text-sm text-gray-600 mb-3">A file-based AES encryption/decryption GUI tool built in Java using password-based key generation.</p>
+        <div class="text-xs text-gray-500 mb-4">Tech: Java, Swing, AES</div>
+        <a href="https://github.com/yourprofile/aes-encryptor" target="_blank" class="text-blue-600 hover:underline text-sm">View Code</a>
+      </div>
+    </div> -->
+
+    <!-- Project 3 -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in">
+      <img src="assets/images/bday.webp" alt="Birthday Surprise Page" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Birthday Surprise Page</h3>
+        <p class="text-sm text-gray-600 mb-3">An animated birthday greeting page with confetti, balloons, 3D image cube, background music, and surprise effects.</p>
+        <div class="text-xs text-gray-500 mb-4">Tech: HTML, CSS, JavaScript</div>
+        <a href="https://birthday-present01.netlify.app/" target="_blank" class="inline-block text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-sm transition">Live Demo</a>
+      </div>
+    </div>
+           <!-- more projects can be added here -->
+  </div>
+</section>
+     <!-- projects section end -->
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-900 text-white py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center mb-12 fade-in">
+    <h2 class="text-3xl font-bold mb-2">Get in Touch</h2>
+    <p class="text-gray-300">Have an opportunity, project, or just want to say hi? Drop a message below!</p>
+  </div>
+
+  <div class="max-w-2xl mx-auto bg-white text-gray-900 p-8 rounded-xl shadow-lg fade-in">
+    <form id="contactForm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+        <input type="text" name="from_name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      <textarea placeholder="Your Message" name="message" rows="5" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4" required></textarea>
+      <!-- Submit Button -->
+<button type="submit" id="submitBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+  Send Message
+</button>
+
+<!-- Loading Spinner -->
+<div id="spinner" class="hidden mt-4">
+  <svg class="animate-spin h-6 w-6 text-blue-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+    <path class="opacity-75" fill="currentColor"
+      d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z">
+    </path>
+  </svg>
+</div>
+    </form>
+
+
+    <div class="mt-8 text-sm text-center text-gray-600">
+      Or email me at <a href="mailto:rudraprasadacharya09@gmail.com" class="text-blue-600 hover:underline">rudraprasadacharya09@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div id="toast" class="fixed bottom-6 right-6 bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg opacity-0 transition-opacity duration-500">
+    ✅ Message sent successfully!
+  </div>
+</section>
+
+    <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 fade-in dark:bg-gray-900">
+  <p>&copy; 2025 Rudra Prasad Acharya. All rights reserved.</p>
+  <p class="text-sm">Designed & Developed with 💻 & ❤️</p>
+</footer>
+
+</main>
+
+  </div>
+  <script src="JS/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="JS/Contact.js"></script>
+</body>
+</html>
